@@ -1,0 +1,190 @@
+[
+  {
+    "categoria": "pantalones",
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Pantalón Casual",
+        "descripcion": "Perfecto para el día a día, cómodo y versátil.",
+        "precio": 45.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 2,
+        "nombre": "Pantalón Formal",
+        "descripcion": "Estilo elegante para ocasiones formales.",
+        "precio": 55.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 3,
+        "nombre": "Pantalón Deportivo",
+        "descripcion": "Comodidad y flexibilidad para entrenar.",
+        "precio": 35.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 4,
+        "nombre": "Pantalón de Jean",
+        "descripcion": "Un clásico moderno, resistente y cómodo.",
+        "precio": 49.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 5,
+        "nombre": "Pantalón Chino",
+        "descripcion": "Perfecto para ocasiones semi-formales.",
+        "precio": 39.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 6,
+        "nombre": "Pantalón Cargo",
+        "descripcion": "Práctico y cómodo.",
+        "precio": 42.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      }
+    ]
+  },
+  {
+    "categoria": "remeras",
+    "productos": [
+      {
+        "id": 7,
+        "nombre": "Remera Casual",
+        "descripcion": "Ideal para usar todos los días.",
+        "precio": 20.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 8,
+        "nombre": "Remera Formal",
+        "descripcion": "Diseño sobrio y elegante.",
+        "precio": 30.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 9,
+        "nombre": "Remera Deportiva",
+        "descripcion": "Remera ligera y transpirable para hacer deporte.",
+        "precio": 25.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 10,
+        "nombre": "Remera Estampada",
+        "descripcion": "Diseño original y vibrante.",
+        "precio": 22.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 11,
+        "nombre": "Remera Polo",
+        "descripcion": "Clásica y elegante para un look semi-formal.",
+        "precio": 29.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 12,
+        "nombre": "Remera Sin Mangas",
+        "descripcion": "Fresca y cómoda para días calurosos.",
+        "precio": 18.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      }
+    ]
+  },
+  {
+    "categoria": "calzado",
+    "productos": [
+      {
+        "id": 13,
+        "nombre": "Zapatillas Urbanas",
+        "descripcion": "Estilo casual y moderno para el uso diario.",
+        "precio": 60.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 14,
+        "nombre": "Zapatos Formales",
+        "descripcion": "Elegantes zapatos de cuero para ocasiones formales.",
+        "precio": 85.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 15,
+        "nombre": "Botines de Montaña",
+        "descripcion": "Resistentes botines para actividades al aire libre.",
+        "precio": 95.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 16,
+        "nombre": "Zapatillas Deportivas",
+        "descripcion": "Comodidad y resistencia para entrenar.",
+        "precio": 70.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 17,
+        "nombre": "Mocasines",
+        "descripcion": "Elegancia y confort en un solo calzado.",
+        "precio": 65.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 18,
+        "nombre": "Sandalias de Cuero",
+        "descripcion": "Perfectas para el verano, con un estilo sofisticado.",
+        "precio": 40.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      }
+    ]
+  },
+  {
+    "categoria": "accesorios",
+    "productos": [
+      {
+        "id": 19,
+        "nombre": "Gorra Deportiva",
+        "descripcion": "Protección solar con estilo.",
+        "precio": 15.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 20,
+        "nombre": "Bufanda de Lana",
+        "descripcion": "Calidez y estilo para el invierno.",
+        "precio": 25.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 21,
+        "nombre": "Cinturón de Cuero",
+        "descripcion": "Cinturón resistente y elegante de cuero genuino.",
+        "precio": 35.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 22,
+        "nombre": "Reloj Deportivo",
+        "descripcion": "Ideal para el entrenamiento y el día a día.",
+        "precio": 55.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 23,
+        "nombre": "Lentes de Sol",
+        "descripcion": "Protección UV con un diseño moderno.",
+        "precio": 30.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      },
+      {
+        "id": 24,
+        "nombre": "Mochila de Cuero",
+        "descripcion": "Elegante mochila para llevar todo lo necesario.",
+        "precio": 80.99,
+        "imagen": "https://via.placeholder.com/400x300"
+      }
+    ]
+  }
+]
