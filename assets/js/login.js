@@ -20,12 +20,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
       // Guardar datos de sesión en localStorage
       localStorage.setItem('userSession', JSON.stringify({
-        email: email, // Almacena el email u otros datos relevantes
+        email: email,
         loggedIn: true
       }));
 
       // Redirigir al usuario a la página principal)
-      window.location.href = "/pages/index.html"; // Cambia la URL según tu estructura
+      window.location.href = "/pages/index.html";
   } else {
       alert("Credenciales inválidas. Intenta nuevamente.");
   }
