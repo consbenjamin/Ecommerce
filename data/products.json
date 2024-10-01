@@ -54,42 +54,42 @@
         "nombre": "Remera Casual",
         "descripcion": "Ideal para usar todos los días.",
         "precio": 20.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/no-rules-black-over1-7ece914c7726d050f416914591947800-640-0.webp"
       },
       {
         "id": 8,
         "nombre": "Remera Formal",
         "descripcion": "Diseño sobrio y elegante.",
         "precio": 30.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/do-or-die-blanco-over-nuevo1-ae3dbe97c931cee1d216824577073186-640-0.webp"
       },
       {
         "id": 9,
         "nombre": "Remera Deportiva",
         "descripcion": "Remera ligera y transpirable para hacer deporte.",
         "precio": 25.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/tk-m3-over-black1-6f73fcbbf52c09212716709382655813-640-0.webp"
       },
       {
         "id": 10,
         "nombre": "Remera Estampada",
         "descripcion": "Diseño original y vibrante.",
         "precio": 22.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/panthera-blanco-over1-ad1229eb83f42b862416877030872444-640-0.webp"
       },
       {
         "id": 11,
         "nombre": "Remera Polo",
         "descripcion": "Clásica y elegante para un look semi-formal.",
         "precio": 29.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/vietnam-over-negro1-c4284a0d5d7b99cee016910086516587-640-0.webp"
       },
       {
         "id": 12,
         "nombre": "Remera Sin Mangas",
         "descripcion": "Fresca y cómoda para días calurosos.",
         "precio": 18.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/102/708/products/msw-prix-blanco-over-a5503c7a4b03342fbc16970552825167-640-0.webp"
       }
     ]
   },
