@@ -18,6 +18,13 @@ function cargarProductosPorCategoria(data, categoria) {
                   <h5 class="card-title">${producto.nombre}</h5>
                   <p class="card-text">${producto.descripcion}</p>
                   <p class="card-text"><strong>Precio: $${producto.precio}</strong></p>
+
+                  <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm" type="button" id="btn-disminuir-${producto.id}">-</button>
+                      <input type="number" id="cantidad-${producto.id}" class="form-control form-control-sm mx-1" value="1" min="1" aria-label="Cantidad" style="width: 50px;">
+                      <button class="btn btn-outline-secondary btn-sm" type="button" id="btn-aumentar-${producto.id}">+</button>
+                  </div>
+
                   <a href="#" class="btn btn-primary">Ver más</a>
               </div>
           </div>
@@ -26,6 +33,20 @@ function cargarProductosPorCategoria(data, categoria) {
   }).join('');
 
   productosContainer.innerHTML = cardsHTML;
+
+  // Agregar eventos para los botones de cantidad
+  categoriaSeleccionada.productos.forEach(producto => {
+    document.getElementById(`btn-aumentar-${producto.id}`).addEventListener('click', function() {
+      const inputCantidad = document.getElementById(`cantidad-${producto.id}`);
+      inputCantidad.value = parseInt(inputCantidad.value) + 1; // Aumentar la cantidad
+    });
+
+    document.getElementById(`btn-disminuir-${producto.id}`).addEventListener('click', function() {
+      const inputCantidad = document.getElementById(`cantidad-${producto.id}`);
+      const nuevaCantidad = parseInt(inputCantidad.value) - 1;
+      inputCantidad.value = nuevaCantidad > 0 ? nuevaCantidad : 1; // Mantener al menos 1
+    });
+  });
 }
 
 // Función para cargar productos según la categoría seleccionada al hacer clic
