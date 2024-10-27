@@ -1,6 +1,6 @@
 // Redirigir si ya está logueado
 window.addEventListener('DOMContentLoaded', () => {
-  const userSession = localStorage.getItem('userSession');
+  const userSession = sessionStorage.getItem('userSession');
   if (userSession) {
     window.location.href = '/pages/index.html'; // Si ya está logueado, redirigir a la página principal
   }
@@ -18,8 +18,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   if (email === validEmail && password === validPassword) {
       alert("¡Inicio de sesión exitoso!");
 
-      // Guardar datos de sesión en localStorage
-      localStorage.setItem('userSession', JSON.stringify({
+      // Guardar datos de sesión en sessionStorage
+      sessionStorage.setItem('userSession', JSON.stringify({
         email: email,
         loggedIn: true
       }));

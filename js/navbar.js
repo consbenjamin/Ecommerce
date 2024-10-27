@@ -22,16 +22,16 @@ const navElements = [
     icon: 'bi-cart'
   },
   {
-    title: 'Login', // Este se mostrará solo si no está logueado
+    title: 'Login',
     link: '/pages/login.html',
     icon: 'bi-person',
-    action: 'login' // Para identificar la acción de login
+    action: 'login'
   },
   {
-    title: 'Logout', // Este se mostrará solo si está logueado
+    title: 'Logout',
     link: '#',
     icon: 'bi-box-arrow-right',
-    action: 'logout' // Para identificar la acción de logout
+    action: 'logout'
   }
 ]
 
@@ -70,7 +70,7 @@ const generateNavBar = (isLoggedIn) => {
 };
 
 // Detectar si el usuario está logueado (ejemplo usando localStorage)
-const isLoggedIn = !!localStorage.getItem('userSession'); // Si hay sesión activa
+const isLoggedIn = !!sessionStorage.getItem('userSession'); // Si hay sesión activa
 
 // Insertar el navbar en el DOM
 let navContainer = document.querySelector('header');
@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     logoutBtn.addEventListener('click', (e) => {
       e.preventDefault();
       // Eliminar datos de sesión
-      localStorage.removeItem('userSession'); // Eliminar sesión
+      sessionStorage.removeItem('userSession'); // Eliminar sesión
       window.location.href = '/pages/login.html'; // Redirigir a la página de login
     });
   }

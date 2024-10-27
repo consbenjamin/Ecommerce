@@ -1,5 +1,19 @@
 const productosContainer = document.getElementById('productos-container');
 
+// Función para agregar un producto al carrito
+function agregarAlCarrito(producto) {
+  const productoParaAgregar = {
+    id: producto.id,
+    nombre: producto.nombre,
+    precio: producto.precio,  
+    cantidad: producto.cantidad || 1 
+  };
+
+  let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  carrito.push(productoParaAgregar);
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
 // Función para generar las cards de los productos de una categoría específica
 function cargarProductosPorCategoria(data, categoria) {
   const categoriaSeleccionada = data.find(categoriaObj => categoriaObj.categoria === categoria);
@@ -25,7 +39,7 @@ function cargarProductosPorCategoria(data, categoria) {
                       <button class="btn btn-outline-secondary btn-sm" type="button" id="btn-aumentar-${producto.id}">+</button>
                   </div>
 
-                  <a href="#" class="btn btn-primary">Ver más</a>
+                  <button class="btn btn-primary" id="btn-agregar-${producto.id}">Agregar al Carrito</button>
               </div>
           </div>
       </div>
@@ -45,6 +59,21 @@ function cargarProductosPorCategoria(data, categoria) {
       const inputCantidad = document.getElementById(`cantidad-${producto.id}`);
       const nuevaCantidad = parseInt(inputCantidad.value) - 1;
       inputCantidad.value = nuevaCantidad > 0 ? nuevaCantidad : 1; // Mantener al menos 1
+    });
+
+    document.getElementById(`btn-agregar-${producto.id}`).addEventListener('click', function() {
+      const cantidadInput = document.getElementById(`cantidad-${producto.id}`);
+      const cantidad = parseInt(cantidadInput.value);
+
+      const productoAAgregar = {
+          id: producto.id,
+          nombre: producto.nombre,
+          precio: producto.precio,
+          cantidad: cantidad,
+      };
+
+      agregarAlCarrito(productoAAgregar);
+      alert(`${producto.nombre} agregado al carrito`);
     });
   });
 }
@@ -77,8 +106,6 @@ fetch('/data/products.json')
     } else {
       console.error('No se encontró la categoría en el atributo data-categoria.');
     }
-
-    // Configuramos los enlaces para cambiar de categoría
     configurarEnlacesCategoria(data);
   })
   .catch(error => {
