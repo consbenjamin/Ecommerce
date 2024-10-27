@@ -1,7 +1,7 @@
 const navElements = [
   {
     title: 'Inicio',
-    link: '/pages/index.html',
+    link: '../index.html',
     icon: 'bi-house'
   },
   {
@@ -40,7 +40,7 @@ const generateNavBar = (isLoggedIn) => {
   return `
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="/pages/index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="/assets/images/logo-tienda.webp" alt="Logo de la tienda" style="height: 60px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

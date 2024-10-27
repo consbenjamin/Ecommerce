@@ -2,7 +2,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const userSession = sessionStorage.getItem('userSession');
   if (userSession) {
-    window.location.href = '/pages/index.html'; // Si ya está logueado, redirigir a la página principal
+    window.location.href = '../index.html'; // Si ya está logueado, redirigir a la página principal
   }
 });
 
@@ -25,7 +25,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       }));
 
       // Redirigir al usuario a la página principal)
-      window.location.href = "/pages/index.html";
+      window.location.href = "../index.html";
   } else {
       alert("Credenciales inválidas. Intenta nuevamente.");
   }

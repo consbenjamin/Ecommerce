@@ -11,7 +11,7 @@ const footerTemplate = `
           <div class="col-md-4 mb-3">
               <h5 class="fw-bold">Enlaces</h5>
               <ul class="list-unstyled">
-                  <li><a href="/pages/index.html" class="text-dark text-decoration-none">Inicio</a></li>
+                  <li><a href="../index.html" class="text-dark text-decoration-none">Inicio</a></li>
                   <li><a href="/pages/calzado.html" class="text-dark text-decoration-none">Calzado</a></li>
                   <li><a href="/pages/remeras.html" class="text-dark text-decoration-none">Remeras</a></li>
                   <li><a href="/pages/pantalones.html" class="text-dark text-decoration-none">Pantalones</a></li>
