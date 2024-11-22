@@ -2,17 +2,17 @@
 window.addEventListener('DOMContentLoaded', () => {
   const userSession = sessionStorage.getItem('userSession');
   if (userSession) {
-    window.location.href = '../index.html'; // Si ya está logueado, redirigir a la página principal
+    window.location.href = '../index.html';
   }
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe de manera convencional
+  event.preventDefault();
 
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  // Simulación de validación (reemplazar con lógica real más adelante)
+  // Simulación de validación
   const validEmail = "admin@hotmail.com"; 
   const validPassword = "admin123"; 
   if (email === validEmail && password === validPassword) {
@@ -24,7 +24,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         loggedIn: true
       }));
 
-      // Redirigir al usuario a la página principal)
       window.location.href = "../index.html";
   } else {
       alert("Credenciales inválidas. Intenta nuevamente.");

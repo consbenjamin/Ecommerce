@@ -98,7 +98,6 @@ fetch('/data/products.json')
     return response.json();
   })
   .then(data => {
-    // Obtener la categoría actual del atributo data-categoria en el <body>
     const categoriaActual = document.body.getAttribute('data-categoria');
     
     if (categoriaActual) {

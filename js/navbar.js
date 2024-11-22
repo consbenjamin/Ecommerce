@@ -18,7 +18,7 @@ const navElements = [
   },
   {
     title: 'Carrito',
-    link: 'carrito.html',
+    link: '/pages/carrito.html',
     icon: 'bi-cart'
   },
   {
@@ -51,7 +51,7 @@ const generateNavBar = (isLoggedIn) => {
                     ${navElements.map(element => {
                       // Mostrar login solo si el usuario no está logueado, y logout solo si está logueado
                       if ((element.action === 'login' && isLoggedIn) || (element.action === 'logout' && !isLoggedIn)) {
-                        return ''; // No mostrar el botón en este caso
+                        return '';
                       }
                       return `
                         <li class="nav-item">
@@ -69,7 +69,7 @@ const generateNavBar = (isLoggedIn) => {
   `;
 };
 
-// Detectar si el usuario está logueado (ejemplo usando localStorage)
+
 const isLoggedIn = !!sessionStorage.getItem('userSession'); // Si hay sesión activa
 
 // Insertar el navbar en el DOM
@@ -77,14 +77,14 @@ let navContainer = document.querySelector('header');
 window.addEventListener('DOMContentLoaded', () => {
   navContainer.innerHTML = generateNavBar(isLoggedIn);
 
-  // Agregar evento para logout
+
   const logoutBtn = document.querySelector('a[data-action="logout"]');
   if (logoutBtn) {
     logoutBtn.addEventListener('click', (e) => {
       e.preventDefault();
       // Eliminar datos de sesión
-      sessionStorage.removeItem('userSession'); // Eliminar sesión
-      window.location.href = '/pages/login.html'; // Redirigir a la página de login
+      sessionStorage.removeItem('userSession'); 
+      window.location.href = '/pages/login.html';
     });
   }
 });
