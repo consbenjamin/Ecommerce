@@ -4,45 +4,45 @@
     "productos": [
       {
         "id": 1,
-        "nombre": "Pantalón Casual",
+        "nombre": "Pantalón de Jean",
         "descripcion": "Perfecto para el día a día, cómodo y versátil.",
         "precio": 45.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/dsc090371-copia-9d12f7ce55d3ea5c0f17258948690249-640-0.webp"
       },
       {
         "id": 2,
         "nombre": "Pantalón Formal",
         "descripcion": "Estilo elegante para ocasiones formales.",
         "precio": 55.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/dsc09049-copia-c03d6f9b5d82a271a117258959701323-640-0.webp"
       },
       {
         "id": 3,
         "nombre": "Pantalón Deportivo",
         "descripcion": "Comodidad y flexibilidad para entrenar.",
         "precio": 35.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/dsc09306-copia-58ea4fd03e2618d0ec17303324978529-640-0.webp"
       },
       {
         "id": 4,
-        "nombre": "Pantalón de Jean",
+        "nombre": "Pantalón Casual",
         "descripcion": "Un clásico moderno, resistente y cómodo.",
         "precio": 49.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/0141-c7a67db8a6fbd876e117096592489823-1024-1024.webp"
       },
       {
         "id": 5,
         "nombre": "Pantalón Chino",
         "descripcion": "Perfecto para ocasiones semi-formales.",
         "precio": 39.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/copia-de-resuelto2306-copy1-cebdafd582a606e2ed16951703181904-640-0.webp"
       },
       {
         "id": 6,
         "nombre": "Pantalón Cargo",
         "descripcion": "Práctico y cómodo.",
         "precio": 42.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://acdn.mitiendanube.com/stores/001/981/951/products/copia-de-resuelto2295-copy-copia-4696972be5a32d74a717128536266483-640-0.webp"
       }
     ]
   },
@@ -101,42 +101,42 @@
         "nombre": "Zapatillas Urbanas",
         "descripcion": "Estilo casual y moderno para el uso diario.",
         "precio": 60.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://nikearprod.vtexassets.com/arquivos/ids/1078179-1200-1200?width=1200&height=1200&aspect=true"
       },
       {
         "id": 14,
         "nombre": "Zapatos Formales",
         "descripcion": "Elegantes zapatos de cuero para ocasiones formales.",
         "precio": 85.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://nikearprod.vtexassets.com/arquivos/ids/1140014-1200-1200?width=1200&height=1200&aspect=true"
       },
       {
         "id": 15,
         "nombre": "Botines de Montaña",
         "descripcion": "Resistentes botines para actividades al aire libre.",
         "precio": 95.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://nikearprod.vtexassets.com/arquivos/ids/1026762-1200-1200?width=1200&height=1200&aspect=true"
       },
       {
         "id": 16,
         "nombre": "Zapatillas Deportivas",
         "descripcion": "Comodidad y resistencia para entrenar.",
         "precio": 70.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw3b55c5c3/47SMA0021_1Y5_01.jpg?imwidth=450&impolicy=pctp"
       },
       {
         "id": 17,
         "nombre": "Mocasines",
         "descripcion": "Elegancia y confort en un solo calzado.",
         "precio": 65.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw67e63452/48SMA0007_GU1_01.jpg?imwidth=450&impolicy=pctp"
       },
       {
         "id": 18,
         "nombre": "Sandalias de Cuero",
         "descripcion": "Perfectas para el verano, con un estilo sofisticado.",
         "precio": 40.99,
-        "imagen": "https://via.placeholder.com/400x300"
+        "imagen": "https://nikearprod.vtexassets.com/arquivos/ids/531558-1000-1000?v=638161381057200000&width=1000&height=1000&aspect=true"
       }
     ]
   },

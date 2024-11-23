@@ -27,7 +27,7 @@ function cargarProductosPorCategoria(data, categoria) {
     return `
       <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-              <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+              <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}" style="height: 320px; object-fit: cover;">
               <div class="card-body">
                   <h5 class="card-title">${producto.nombre}</h5>
                   <p class="card-text">${producto.descripcion}</p>
