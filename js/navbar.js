@@ -35,7 +35,6 @@ const navElements = [
   }
 ]
 
-// Generar el navbar
 const generateNavBar = (isLoggedIn) => {
   return `
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">

@@ -27,7 +27,7 @@ const footerTemplate = `
           </div>
       </div>
       <hr class="bg-dark">
-      <p class="mb-0 small">© 2024 Nombre de tu tienda. Todos los derechos reservados.</p>
+      <p class="mb-0 small">© 2024 Ecommerce Ropa. Todos los derechos reservados.</p>
   </div>
 </footer>
 `;

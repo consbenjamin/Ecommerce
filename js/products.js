@@ -48,17 +48,16 @@ function cargarProductosPorCategoria(data, categoria) {
 
   productosContainer.innerHTML = cardsHTML;
 
-  // Agregar eventos para los botones de cantidad
   categoriaSeleccionada.productos.forEach(producto => {
     document.getElementById(`btn-aumentar-${producto.id}`).addEventListener('click', function() {
       const inputCantidad = document.getElementById(`cantidad-${producto.id}`);
-      inputCantidad.value = parseInt(inputCantidad.value) + 1; // Aumentar la cantidad
+      inputCantidad.value = parseInt(inputCantidad.value) + 1;
     });
 
     document.getElementById(`btn-disminuir-${producto.id}`).addEventListener('click', function() {
       const inputCantidad = document.getElementById(`cantidad-${producto.id}`);
       const nuevaCantidad = parseInt(inputCantidad.value) - 1;
-      inputCantidad.value = nuevaCantidad > 0 ? nuevaCantidad : 1; // Mantener al menos 1
+      inputCantidad.value = nuevaCantidad > 0 ? nuevaCantidad : 1;
     });
 
     document.getElementById(`btn-agregar-${producto.id}`).addEventListener('click', function() {
@@ -89,7 +88,7 @@ function configurarEnlacesCategoria(data) {
   });
 }
 
-// Usamos fetch para obtener el archivo JSON
+// Obtener el archivo JSON
 fetch('/data/products.json') 
   .then(response => {
     if (!response.ok) {

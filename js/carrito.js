@@ -43,7 +43,7 @@ paypal.Buttons({
     return actions.order.create({
       purchase_units: [{
         amount: {
-          value: total.toFixed(2) // Total del carrito
+          value: total.toFixed(2) 
         }
       }]
     });
@@ -62,5 +62,5 @@ paypal.Buttons({
   }
 }).render('#paypal-button-container'); // Renderiza el botón en el div
 
-// Cargar el carrito al cargar la página
+
 document.addEventListener('DOMContentLoaded', cargarCarrito);
