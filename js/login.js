@@ -6,26 +6,31 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
 
-  // Simulación de validación
-  const validEmail = "admin@hotmail.com"; 
-  const validPassword = "admin123"; 
-  if (email === validEmail && password === validPassword) {
-      alert("¡Inicio de sesión exitoso!");
+  // Obtener usuarios desde localStorage
+  const users = JSON.parse(localStorage.getItem('users')) || [];
 
-      // Guardar datos de sesión en sessionStorage
-      sessionStorage.setItem('userSession', JSON.stringify({
-        email: email,
-        loggedIn: true
-      }));
+  // Buscar un usuario con el email y password proporcionados
+  const user = users.find(user => user.email === email && user.password === password);
 
-      window.location.href = "../index.html";
+  if (user) {
+    alert(`¡Bienvenido, ${user.nombre}!`);
+
+    // Guardar datos de sesión en sessionStorage
+    sessionStorage.setItem('userSession', JSON.stringify({
+      email: user.email,
+      nombre: user.nombre,
+      loggedIn: true
+    }));
+
+    // Redirigir a la página principal
+    window.location.href = "../index.html";
   } else {
-      alert("Credenciales inválidas. Intenta nuevamente.");
+    alert("Credenciales inválidas. Intenta nuevamente.");
   }
 });

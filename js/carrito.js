@@ -13,7 +13,6 @@ function cargarCarrito() {
 
   let total = 0;
   const carritoHTML = carrito.map(producto => {
-
     total += producto.precio * producto.cantidad;
     return `
       <tr>
@@ -36,6 +35,32 @@ function eliminarDelCarrito(productId) {
   localStorage.setItem('carrito', JSON.stringify(carrito));
   cargarCarrito();
 }
+
+// Integración de PayPal
+paypal.Buttons({
+  createOrder: function (data, actions) {
+    const total = parseFloat(document.getElementById('cartTotal').textContent) || 0;
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: total.toFixed(2) // Total del carrito
+        }
+      }]
+    });
+  },
+  onApprove: function (data, actions) {
+    return actions.order.capture().then(function (details) {
+      alert('Pago realizado con éxito por ' + details.payer.name.given_name);
+      // Vaciar el carrito después del pago
+      localStorage.removeItem('carrito');
+      cargarCarrito(); // Recargar el carrito vacío
+    });
+  },
+  onError: function (err) {
+    console.error('Error en el pago: ', err);
+    alert('Ocurrió un error al procesar el pago.');
+  }
+}).render('#paypal-button-container'); // Renderiza el botón en el div
 
 // Cargar el carrito al cargar la página
 document.addEventListener('DOMContentLoaded', cargarCarrito);
